@@ -1,0 +1,7 @@
+<launch>
+    <!-- IK Node -->
+    <node pkg="arm_ik" type="ik_node" name="ik_node" output="screen" />
+
+    <!-- algorithm node -->
+    <node pkg="arm_ik" type="algorithm_node" name="algorithm_node" output="screen" />
+</launch>

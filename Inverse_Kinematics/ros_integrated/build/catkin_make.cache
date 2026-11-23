@@ -1,0 +1,2 @@
+ros_IK
+-DCATKIN_DEVEL_PREFIX=/home/bhrama/--ABINARA-1/Final_Project/bridging/inverse_kinematics/ros_integrated/devel -DCMAKE_INSTALL_PREFIX=/home/bhrama/--ABINARA-1/Final_Project/bridging/inverse_kinematics/ros_integrated/install -G Unix Makefiles

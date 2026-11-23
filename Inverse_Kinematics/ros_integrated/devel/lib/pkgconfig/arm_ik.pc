@@ -1,0 +1,8 @@
+prefix=/home/bhrama/--ABINARA-1/Final_Project/bridging/inverse_kinematics/ros_integrated/devel
+
+Name: arm_ik
+Description: Description of arm_ik
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
