@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>lengan_servo</name>
+  <version>0.1.0</version>
+  <description>ROS bridge between topics and the STM32 servo arm</description>
+
+  <maintainer email="you@example.com">Your Name</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+</package>
