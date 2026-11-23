@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="idk bisa">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0292664322308246 3.80643421992316E-05 0.0575803039785511"
+        rpy="0 0 0" />
+      <mass
+        value="0.42551618878006" />
+      <inertia
+        ixx="0.000670978843894524"
+        ixy="-2.18361547604266E-05"
+        ixz="-3.190399790107E-05"
+        iyy="0.00122635106377729"
+        iyz="-1.57861669826766E-06"
+        izz="0.0016113426608324" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://idk bisa/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://idk bisa/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link_1">
+    <inertial>
+      <origin
+        xyz="-0.000767419948090292 0.0118718059599835 0.0209611467701409"
+        rpy="0 0 0" />
+      <mass
+        value="0.164736997907043" />
+      <inertia
+        ixx="0.000125211960941619"
+        ixy="2.72804715869058E-06"
+        ixz="2.07852838030582E-05"
+        iyy="0.00016457622409612"
+        iyz="-1.36511274586438E-05"
+        izz="0.000122489128377102" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://idk bisa/meshes/Link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://idk bisa/meshes/Link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="DoF_1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.113"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.078"
+      velocity="2.0831" />
+  </joint>
+  <link
+    name="Link_2">
+    <inertial>
+      <origin
+        xyz="6.72474452181183E-05 0.0921295367235433 0.00542833259181493"
+        rpy="0 0 0" />
+      <mass
+        value="0.166628195654358" />
+      <inertia
+        ixx="0.000481303292319749"
+        ixy="-3.27605313193028E-07"
+        ixz="-3.99355058438834E-10"
+        iyy="3.00915604211715E-05"
+        iyz="-5.20220247802006E-07"
+        izz="0.000495303054145719" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://idk bisa/meshes/Link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://idk bisa/meshes/Link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="DoF_2"
+    type="revolute">
+    <origin
+      xyz="-0.013712 -0.0029 0.038245"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Link_1" />
+    <child
+      link="Link_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="0"
+      effort="1.078"
+      velocity="2.38" />
+  </joint>
+  <link
+    name="Link_3">
+    <inertial>
+      <origin
+        xyz="-0.00138436118294554 0.0790047614588952 -0.0214291945278958"
+        rpy="0 0 0" />
+      <mass
+        value="0.146498870549635" />
+      <inertia
+        ixx="0.00043189288819452"
+        ixy="7.31420912806728E-06"
+        ixz="2.52374488217292E-08"
+        iyy="2.08590031278406E-05"
+        iyz="-1.42525877591604E-06"
+        izz="0.000441794463126073" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://idk bisa/meshes/Link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://idk bisa/meshes/Link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="DoF_3"
+    type="revolute">
+    <origin
+      xyz="0.0001349 0.185 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_2" />
+    <child
+      link="Link_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="0"
+      effort="1.078"
+      velocity="2.0831" />
+  </joint>
+  <link
+    name="Gripper">
+    <inertial>
+      <origin
+        xyz="0.0104162209817346 0.0467427994035978 -0.00939822029553551"
+        rpy="0 0 0" />
+      <mass
+        value="0.0288009450459534" />
+      <inertia
+        ixx="1.61053162725798E-05"
+        ixy="-2.14786585282005E-06"
+        ixz="2.25449586795841E-07"
+        iyy="4.89516254785629E-06"
+        iyz="8.48614779282712E-07"
+        izz="1.3904179074514E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://idk bisa/meshes/Gripper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://idk bisa/meshes/Gripper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="DoF_4"
+    type="revolute">
+    <origin
+      xyz="-0.00330817380699471 0.176893514516691 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_3" />
+    <child
+      link="Gripper" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.078"
+      velocity="3.333" />
+  </joint>
+  <link
+    name="L_Gripper">
+    <inertial>
+      <origin
+        xyz="0.0048223348973041 -0.0152792133299438 -0.00968596962421064"
+        rpy="0 0 0" />
+      <mass
+        value="0.00822151971773342" />
+      <inertia
+        ixx="2.11563414030114E-06"
+        ixy="-6.19426511080213E-09"
+        ixz="3.85507861517379E-08"
+        iyy="1.33965086732552E-06"
+        iyz="2.77046119625864E-07"
+        izz="8.10576683942314E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://idk bisa/meshes/L_Gripper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://idk bisa/meshes/L_Gripper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="DoF_5_L"
+    type="revolute">
+    <origin
+      xyz="0.019323670230242 0.0600938288747926 -0.0192999999999634"
+      rpy="1.57079632679494 0 0" />
+    <parent
+      link="Gripper" />
+    <child
+      link="L_Gripper" />
+    <axis
+      xyz="-0.999543864717968 0 -0.0302003725915523" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0.2157"
+      velocity="3.333" />
+  </joint>
+  <link
+    name="End_L_Gripper">
+    <inertial>
+      <origin
+        xyz="-0.0243392314890261 0.0150998391826804 0.460597785665091"
+        rpy="0 0 0" />
+      <mass
+        value="1.06652387138315" />
+      <inertia
+        ixx="0.0329660012877163"
+        ixy="0.000491916856560557"
+        ixz="0.000410673551083743"
+        iyy="0.0295699434114826"
+        iyz="0.00269528099438001"
+        izz="0.0063624611385729" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://idk bisa/meshes/End_L_Gripper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://idk bisa/meshes/End_L_Gripper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="End_DoF_5_L"
+    type="fixed">
+    <origin
+      xyz="0.00664943977472825 -0.0204099882292862 -0.0545161065695527"
+      rpy="0 0 0" />
+    <parent
+      link="L_Gripper" />
+    <child
+      link="End_L_Gripper" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="R_Gripper">
+    <inertial>
+      <origin
+        xyz="0.0048008258614054 0.0133464533183085 -0.0125198133806509"
+        rpy="0 0 0" />
+      <mass
+        value="0.00822151966127057" />
+      <inertia
+        ixx="2.11565142133509E-06"
+        ixy="1.2913954006927E-08"
+        ixz="3.6570265453051E-08"
+        iyy="1.22745929783275E-06"
+        iyz="-3.51001323419732E-07"
+        izz="9.22750982054868E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://idk bisa/meshes/R_Gripper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://idk bisa/meshes/R_Gripper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="DoF_5_L"
+    type="revolute">
+    <origin
+      xyz="0.0193342403606491 0.0604436692274439 0.00834000000003673"
+      rpy="1.57079632679494 0 0" />
+    <parent
+      link="Gripper" />
+    <child
+      link="R_Gripper" />
+    <axis
+      xyz="-0.999543864717968 0 -0.0302003725915507" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0.2157"
+      velocity="3.333" />
+  </joint>
+  <link
+    name="End_R_Gripper">
+    <inertial>
+      <origin
+        xyz="-0.024443394684749 -0.0435073109683064 0.46404528231098"
+        rpy="0 0 0" />
+      <mass
+        value="1.06652387138315" />
+      <inertia
+        ixx="0.0329660012877163"
+        ixy="0.000491916856560561"
+        ixz="0.000410673551083737"
+        iyy="0.0295699434114827"
+        iyz="0.00269528099437977"
+        izz="0.00636246113857284" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://idk bisa/meshes/End_R_Gripper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://idk bisa/meshes/End_R_Gripper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="End_DoF_5_R"
+    type="fixed">
+    <origin
+      xyz="0.00674303284004404 0.0105571619217052 -0.0576137628627893"
+      rpy="0 0 0" />
+    <parent
+      link="R_Gripper" />
+    <child
+      link="End_R_Gripper" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
