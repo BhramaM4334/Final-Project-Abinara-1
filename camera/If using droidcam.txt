@@ -1,0 +1,30 @@
+how to do the thing:
+using droidcam (working for now)
+
+-> run droidcam
+(you can do this too: 'droidcam ./install-video ')
+
+-> *dont forget to: sudo modprobe v4l2loopback # this is to register webcams on linux*
+
+check video list:
+
+ls -l /dev/video*
+v4l2-ctl --list-devices # need to install v4l-utils
+
+v4l2-ctl is more detailed so you can see the dummy video 
+
+run:
+rosrun usb_cam usb_cam_node _video_device:="/dev/video2" _pixel_format:="mjpeg"
+
+or
+
+(use this for now)
+rosrun cv_camera cv_camera_node cv_camera/image_raw:=/usb_cam/image_raw _device_id:=2
+
+#note: /dev/video* varies so use the dummy one that is available from v4l2-ctl
+
+check video run:
+rosrun image_view image_view image:=/usb_cam/image_raw
+
+
+
